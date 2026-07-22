@@ -28,6 +28,19 @@ The network leverages multi-scale feature extraction:
 
   - Class 1 (Seizure): Set S (Ictal seizure recordings).
 
+**Case 2: 3-Class Brain State Categorization**
+- Case 2 groups the five dataset subsets into three distinct physiological states, allowing the model to differentiate between healthy baseline activity, inter-ictal (seizure-free intervals), and ictal (active seizure) events.
+
+- Target Problem: Multi-class classification across three clinical condition categories.
+
+- Class Mapping:
+
+  - Class 0 (Healthy Control): Set Z (Surface EEG, eyes open).
+
+  - Class 1 (Baseline / Inter-ictal): Sets O (Surface EEG, eyes closed) and N (Seizure-free inter-ictal recordings from the hippocampal structure).
+
+  - Class 2 (Focal Inter-ictal / Ictal): Sets F (Seizure-free inter-ictal recordings from the epileptogenic zone) and S (Ictal seizure recordings).
+
 ## Performance & Metrics
 
 Each script automatically evaluates model performance on an 80/20 train/validation split and logs key metrics:
