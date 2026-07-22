@@ -8,8 +8,17 @@ An end-to-end deep learning framework designed to detect epileptic seizures from
 
 The network leverages multi-scale feature extraction:
 
-**1D CNN Branch:** Captures high-resolution raw temporal dynamics.
+**1D CNN Branch:** Extracts fine temporal dynamics directly from normalized raw waveforms.
 
-**2D CNN Branch:** Captures spectral patterns and frequency shifts across time using STFT magnitude spectrograms.
+**2D CNN Branch:** Captures spectral power variations across time using magnitude spectrograms from Short-Time Fourier Transform (STFT).
 
-**BiLSTM Backbone:** Captures bi-directional context from the combined feature maps to classify seizure vs. non-seizure activity.
+**BiLSTM Backbone:** Fuses both representations and feeds them into two stacked Bidirectional LSTM layers to capture long-term bi-directional contextual dependencies.
+
+## Experimental Cases Overview
+
+**Case 1:** Binary Seizure Detection (Seizure vs. Non-Seizure)
+Case 1 focuses on standard automated seizure detection by isolating active ictal (seizure) events from all non-seizure EEG recordings.
+Class Mapping:
+Class 0 (Non-Seizure): Sets Z, O, N, and F (Healthy subjects and inter-ictal recordings combined).
+Class 1 (Seizure): Set S (Ictal seizure recordings).
+
