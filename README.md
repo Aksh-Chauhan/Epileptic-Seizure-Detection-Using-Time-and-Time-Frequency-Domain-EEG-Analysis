@@ -20,13 +20,13 @@ The network leverages multi-scale feature extraction:
 
 Case 1 focuses on standard automated seizure detection by isolating active ictal (seizure) events from all non-seizure EEG recordings.
 
-Target Problem: Binary classification determining whether a given EEG segment contains active seizure activity.
+-Target Problem: Binary classification determining whether a given EEG segment contains active seizure activity.
 
-Class Mapping:
+-Class Mapping:
 
-Class 0 (Non-Seizure): Sets Z, O, N, and F (Healthy subjects and inter-ictal recordings combined).
+--Class 0 (Non-Seizure): Sets Z, O, N, and F (Healthy subjects and inter-ictal recordings combined).
 
-Class 1 (Seizure): Set S (Ictal seizure recordings).
+--Class 1 (Seizure): Set S (Ictal seizure recordings).
 
 ## Performance & Metrics
 
