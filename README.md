@@ -24,9 +24,9 @@ Case 1 focuses on standard automated seizure detection by isolating active ictal
 
 - Class Mapping:
 
--- Class 0 (Non-Seizure): Sets Z, O, N, and F (Healthy subjects and inter-ictal recordings combined).
+  - Class 0 (Non-Seizure): Sets Z, O, N, and F (Healthy subjects and inter-ictal recordings combined).
 
--- Class 1 (Seizure): Set S (Ictal seizure recordings).
+  - Class 1 (Seizure): Set S (Ictal seizure recordings).
 
 ## Performance & Metrics
 
