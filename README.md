@@ -41,6 +41,24 @@ The network leverages multi-scale feature extraction:
 
   - Class 2 (Focal Inter-ictal / Ictal): Sets F (Seizure-free inter-ictal recordings from the epileptogenic zone) and S (Ictal seizure recordings).
 
+**Case 3: 5-Class Granular Signal Identification**
+
+- Case 3 evaluates the dual-branch model's capacity for fine-grained discrimination by assigning every original Bonn subset (Z, O, N, F, S) to its own distinct label.
+
+- Target Problem: Full 5-way multi-class classification mapping every distinct recording condition.
+
+- Class Mapping:
+
+  - Class 0: Set Z — Healthy subject, Surface EEG (Eyes Open)
+
+  - Class 1: Set O — Healthy subject, Surface EEG (Eyes Closed)
+
+  - Class 2: Set N — Epileptic patient, Intracranial EEG (Inter-ictal, Hippocampal structure)
+
+  - Class 3: Set F — Epileptic patient, Intracranial EEG (Inter-ictal, Epileptogenic zone)
+
+  - Class 4: Set S — Epileptic patient, Intracranial EEG (Ictal, Active seizure)
+
 ## Performance & Metrics
 
 Each script automatically evaluates model performance on an 80/20 train/validation split and logs key metrics:
