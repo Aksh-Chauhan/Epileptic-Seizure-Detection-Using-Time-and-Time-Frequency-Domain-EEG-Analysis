@@ -22,3 +22,16 @@ Case 1 focuses on standard automated seizure detection by isolating active ictal
 
 Class Mapping: Class 0 (Non-Seizure): Sets Z, O, N, and F (Healthy subjects and inter-ictal recordings combined) and Class 1 (Seizure): Set S (Ictal seizure recordings).
 
+## Performance & Metrics
+
+Each script automatically evaluates model performance on an 80/20 train/validation split and logs key metrics:
+
+**Accuracy:** Overall classification accuracy.
+
+**F1-Score:** Weighted harmonic mean of precision and recall.
+
+**Confusion Matrix:** Complete breakdown of true positive vs. misclassified instances across all target classes.
+
+**Sensitivity & Specificity:** Calculated directly for Case 1 binary detection.
+
+**Diagnostic Plots:** Training vs. Validation Loss and Accuracy curves generated post-training.
