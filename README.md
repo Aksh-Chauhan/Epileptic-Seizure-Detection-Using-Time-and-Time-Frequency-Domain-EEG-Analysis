@@ -1,6 +1,6 @@
 # Epileptic-Seizure-Detection-Using-Time-and-Time-Frequency-Domain-EEG-Analysis
 
-An end-to-end deep learning framework designed to detect epileptic seizures from EEG signals using the **Bonn EEG Dataset**. This model combines a dual-branch architecture—extracting raw **Time-Domain** features via 1D-CNN and **Time-Frequency Domain** features via Short-Time Fourier Transform (STFT) with 2D-CNN—before feeding the fused representations into a Bidirectional LSTM (BiLSTM) for temporal sequence modeling.
+An end-to-end deep learning framework designed to detect epileptic seizures from EEG signals using the **Bonn EEG Dataset**. This model combines a dual-branch architecture—extracting raw **Time-Domain** features via 1D-CNN and **Time-Frequency Domain** features via Short-Time Fourier Transform (STFT) with 2D-CNN—before feeding the fused representations into a Bidirectional LSTM (BiLSTM) for temporal sequence modeling. This repository provides a robust architecture evaluated across three distinct clinical classification scenarios: **Binary Detection (Case 1)**, **3-Class State Categorization (Case 2)**, and **5-Class Granular Signal Identification (Case 3)**.
 
 ## Model Architecture
 
