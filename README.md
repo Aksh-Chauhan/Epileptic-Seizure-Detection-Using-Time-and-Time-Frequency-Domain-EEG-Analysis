@@ -16,7 +16,7 @@ The network leverages multi-scale feature extraction:
 
 ## Experimental Cases Overview
 
-**Case 1:** Binary Seizure Detection (Seizure vs. Non-Seizure)
+**Case 1: Binary Seizure Detection (Seizure vs. Non-Seizure)**
 
 Case 1 focuses on standard automated seizure detection by isolating active ictal (seizure) events from all non-seizure EEG recordings.
 
